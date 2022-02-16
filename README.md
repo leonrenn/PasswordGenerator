@@ -1,7 +1,15 @@
 # PasswordGenerator
-Simple random password generator that works on the command line. 
 
-Only tested on **Mac**, but should work for other operating systems as well.
+## Short Description
+Simple random password generator 
+
+## Requirements
+- python version: 3+
+- 'import random' (inbuilt)
+
+## Test
+- successful
+- only tested on **Mac** with python version 3.9.10
 
 ## Modification
 
