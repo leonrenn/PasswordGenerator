@@ -5,17 +5,23 @@ Short script to generate random but secure passwords
 # MODULES
 import random
 
+
+# MAIN
+
 def main() -> None:
     while True:
         try:
-            numberOfCharacters = int(input("How many characters?"))
+            number_of_characters = int(input("How many characters?"))
             break
-        except Exception:
+        except TypeError:
             print("Provide a valid argument!\n")
     characters = [chr(i) for i in range(33,127)] # beginning with !
-    pwd = [random.choice(characters) for _ in range(numberOfCharacters)]
-    print("".join(pwd))
+    password = [random.choice(characters) for _ in range(number_of_characters)]
+    print("".join(password))
     return
+
+
+# START PROGRAM
 
 if __name__ == "__main__":
     main()
