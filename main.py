@@ -1,5 +1,5 @@
 """
-Short script to generate random but secure passwords
+Short script to generate random but secure passwords.
 """
 
 # MODULES
@@ -17,7 +17,7 @@ def main() -> None:
         except TypeError:
             print("Provide a valid argument!\n")
     if opt == "all":
-        characters = [chr(i) for i in range(33,127)] # beginning with !
+        characters = [chr(i) for i in range(33, 127)]  # beginning with !
     password = [random.choice(characters) for _ in range(number_of_characters)]
     print("".join(password))
     return
